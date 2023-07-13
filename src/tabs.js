@@ -1,6 +1,6 @@
-import createContactPage from "./contact";
-import createMenuPage from "./menu";
-import createRestautantHomePage from "./restaurant";
+import createContactPage from "./contact.js";
+import createMenuPage from "./menu.js";
+import createRestautantHomePage from "./restaurant.js";
 
 const createTabs = () => {
   const content = document.querySelector("#content");

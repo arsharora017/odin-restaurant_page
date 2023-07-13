@@ -1,5 +1,5 @@
 import "./style.css";
-import res_image from "/dist/img/res_photo.jpg";
+import resImage from "/dist/img/res_photo.jpg";
 
 const createRestautantHomePage = () => {
   const content = document.querySelector("#content");
@@ -14,8 +14,8 @@ const createRestautantHomePage = () => {
   // Create and append image elementnpm run build
 
   const image = new Image();
-  image = document.createElement("img");
-  image.src = res_image;
+  //image = document.createElement("img"); - commented it to check if it was impacting the image load
+  image.src = resImage;
   image.height = "300";
   pageContent.appendChild(image);
 
