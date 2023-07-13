@@ -1,5 +1,5 @@
 import pageLoad from "./pageLoad.js";
-import "./style.css";
+// import "./style.css";
 
 // Load page
 pageLoad();

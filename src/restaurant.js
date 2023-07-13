@@ -1,5 +1,5 @@
-import "./style.css";
-import resImage from "/dist/img/res_photo.jpg";
+// import "./style.css";
+import resImage from "../dist/img/res-photo.jpg";
 
 const createRestautantHomePage = () => {
   const content = document.querySelector("#content");

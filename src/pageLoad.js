@@ -1,4 +1,4 @@
-import "./style.css";
+// import "./style.css";
 
 import createRestautantHomePage from "./restaurant.js";
 import createTabs from "./tabs.js";
