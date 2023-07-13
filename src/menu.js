@@ -1,4 +1,5 @@
 //module for creating menu page
+import "./style.css";
 
 const createMenuPage = () => {
   const content = document.querySelector("#content");

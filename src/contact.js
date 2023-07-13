@@ -1,4 +1,5 @@
 //module for creating the contact page
+import "./style.css";
 
 const createContactPage = () => {
   const content = document.querySelector("#content");

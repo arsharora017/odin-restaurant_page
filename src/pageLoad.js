@@ -1,3 +1,5 @@
+import "./style.css";
+
 import createRestautantHomePage from "./restaurant";
 import createTabs from "./tabs";
 

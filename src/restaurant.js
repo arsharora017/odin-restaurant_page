@@ -1,3 +1,6 @@
+import "./style.css";
+import res_image from "/dist/img/res_photo.jpg";
+
 const createRestautantHomePage = () => {
   const content = document.querySelector("#content");
   const pageContent = document.createElement("div");
@@ -8,9 +11,11 @@ const createRestautantHomePage = () => {
   headline.textContent = "Welcome to our restaurant!";
   pageContent.appendChild(headline);
 
-  // Create and append image element
-  const image = document.createElement("img");
-  image.src = "/dist/img/res_photo.jpg";
+  // Create and append image elementnpm run build
+
+  const image = new Image();
+  image = document.createElement("img");
+  image.src = res_image;
   image.height = "300";
   pageContent.appendChild(image);
 
