@@ -1,0 +1,25 @@
+{
+  "name": "restpage",
+  "version": "1.0.0",
+  "description": "odin project restaurant page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arsharora017/odin-restaurant_page.git"
+  },
+  "author": "arsh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arsharora017/odin-restaurant_page/issues"
+  },
+  "homepage": "https://github.com/arsharora017/odin-restaurant_page#readme",
+  "devDependencies": {
+    "css-loader": "^6.8.1",
+    "style-loader": "^3.3.3",
+    "webpack": "^5.88.1",
+    "webpack-cli": "^5.1.4"
+  }
+}
