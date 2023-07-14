@@ -14,7 +14,7 @@ const createRestautantHomePage = () => {
   // Create and append image elementnpm run build
 
   const image = new Image();
-  //image = document.createElement("img"); - commented it to check if it was impacting the image load
+  // image = document.createElement("img"); //commented it to check if it was impacting the image load
   image.src = resImage;
   image.height = "300";
   pageContent.appendChild(image);
