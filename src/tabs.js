@@ -1,6 +1,7 @@
 import createContactPage from "./contact.js";
 import createMenuPage from "./menu.js";
 import createRestautantHomePage from "./restaurant.js";
+import "./style.css";
 
 const createTabs = () => {
   const content = document.querySelector("#content");
