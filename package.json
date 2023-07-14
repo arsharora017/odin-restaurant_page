@@ -6,7 +6,7 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "customDeply": "git subtree push --prefix dist origin gh-pages",
+    "customDeploy": "git subtree push --prefix dist origin gh-pages",
     "build": "webpack"
   },
   "repository": {
