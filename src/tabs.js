@@ -6,6 +6,11 @@ import "./style.css";
 const createTabs = () => {
   const content = document.querySelector("#content");
 
+  //create header, h1 and main nav container
+  const header = document.createElement("header");
+  const pageHeading = document.createElement("h1");
+  const navDiv = document.createElement("div");
+
   // Create three divs
   const div1 = document.createElement("div");
   const div2 = document.createElement("div");
@@ -16,20 +21,29 @@ const createTabs = () => {
   div2.setAttribute("id", "menu-btn");
   div3.setAttribute("id", "contact-btn");
 
-  //Set classes on divs
+  //Set classes
+  header.classList.add("header");
+  pageHeading.classList.add("page-heading");
+  navDiv.classList.add("nav-container");
   div1.classList.add("tab");
   div2.classList.add("tab");
   div3.classList.add("tab");
 
-  //Set text content for tabs
+  //Set text content
+  pageHeading.textContent = "Indilicious";
   div1.textContent = "Home";
   div2.textContent = "Menu";
   div3.textContent = "Contact";
 
-  //Append divs to content div
-  content.appendChild(div1);
-  content.appendChild(div2);
-  content.appendChild(div3);
+  //Append divs to navDiv
+  navDiv.appendChild(div1);
+  navDiv.appendChild(div2);
+  navDiv.appendChild(div3);
+
+  //append to content
+  header.appendChild(pageHeading);
+  header.appendChild(navDiv);
+  content.appendChild(header);
 
   div1.addEventListener("click", () => {
     clearContent();
