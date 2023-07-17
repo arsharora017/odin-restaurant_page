@@ -129,8 +129,17 @@ table {
 }
 
 /* My Project */
+
+:root {
+  --font-color: #eee;
+  --background-dark: rgba(0, 0, 0, 0.9);
+}
+
 body {
-  background-color: red;
+  /* background-color: red; */
+  background-image: url(/dist/img/bg-butter-chicken.jpg);
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 #content {
@@ -142,7 +151,7 @@ body {
 /* header */
 
 .header {
-  background-color: yellow;
+  background-color: var(--background-dark);
   padding-top: 3rem;
 }
 
@@ -150,6 +159,7 @@ body {
   font-size: 4rem;
   text-align: center;
   font-family: cursive;
+  color: var(--font-color);
 }
 
 .nav-container {
@@ -169,6 +179,13 @@ body {
   text-align: center;
   font-weight: bold;
   font-size: 1.5rem;
+  color: var(--font-color);
+  transition: transform 0.3s;
+  border-bottom: 2px solid transparent;
+}
+
+.tab:hover {
+  transform: translateY(-10%);
 }
 
 .contact-form {
