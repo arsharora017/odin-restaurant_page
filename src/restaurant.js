@@ -1,4 +1,3 @@
-// import "./style.css";
 import resImage from "../dist/img/res-photo.jpg";
 
 const createRestautantHomePage = () => {
