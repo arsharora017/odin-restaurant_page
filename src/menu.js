@@ -1,33 +1,40 @@
 //module for creating menu page
-import card from "./card";
+import img1 from "../dist/img/ButterChicken.jpg";
 
 const createMenuPage = () => {
   const content = document.querySelector("#content");
   const pageContent = document.createElement("div");
   pageContent.classList.add("page-content");
+  pageContent.classList.add("menu-container");
 
-  // const heading = document.createElement("h1");
-  // heading.textContent = "Our Menu";
+  const menu = document.createElement("div");
+  menu.classList.add("menu");
 
-  // const menuList = document.createElement("ul");
-  // const menuItem1 = document.createElement("li");
-  // menuItem1.textContent = "Butter Chicken";
+  //create card elements
+  const card = document.createElement("div");
+  const menuCardImg = new Image();
 
-  // const menuItem2 = document.createElement("li");
-  // menuItem2.textContent = "Chicken Tikka";
+  const cardHeading = document.createElement("h2");
+  const cardPara = document.createElement("p");
 
-  // const menuItem3 = document.createElement("li");
-  // menuItem3.textContent = "Chicken Korma";
+  //add content to elements
+  menuCardImg.src = img1;
+  cardHeading.textContent = "Butter Chicken";
+  cardPara.textContent = "Delicious";
 
-  // pageContent.appendChild(heading);
+  //add classes
+  card.classList.add("card");
+  menuCardImg.classList.add("menu-card-img");
+  cardHeading.classList.add("card-heading");
+  cardPara.classList.add("card-para");
 
-  // menuList.appendChild(menuItem1);
-  // menuList.appendChild(menuItem2);
-  // menuList.appendChild(menuItem3);
-
-  // pageContent.appendChild(menuList);
-
-  //content.appendChild(pageContent);
+  //append elements
+  card.appendChild(menuCardImg);
+  card.appendChild(cardHeading);
+  card.appendChild(cardPara);
+  menu.appendChild(card);
+  pageContent.appendChild(menu);
+  content.appendChild(pageContent);
 };
 
 export default createMenuPage;

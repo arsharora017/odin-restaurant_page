@@ -1,5 +1,9 @@
 const card = (img, heading, description) => {
-  // create elements
+  // const content = document.querySelector("#content");
+  // const pageContent = document.createElement("div");
+  // pageContent.classList.add("page-content");
+
+  //create card elements
   const card = document.createElement("div");
   const menuCardImg = new Image();
 
@@ -21,6 +25,8 @@ const card = (img, heading, description) => {
   card.appendChild(menuCardImg);
   card.appendChild(cardHeading);
   card.appendChild(cardPara);
+  // pageContent.appendChild(card);
+  // content.appendChild(pageContent);
 };
 
 export default card;
