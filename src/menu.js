@@ -1,26 +1,43 @@
 //module for creating menu page
-import img1 from "../dist/img/ButterChicken.jpg";
+import butterChicken from "../dist/img/butter-chicken.jpg";
+import palakChicken from "../dist/img/palak-chicken.jpg";
+import chikenTikka from "../dist/img/chicken-tikka-masala.jpg";
+import chickenKorma from "../dist/img/chicken-korma.jpg";
+import tandooriChicken from "../dist/img/tandoori-chicken.jpg";
+import chickenCurry from "../dist/img/chicken-curry.jpg";
 
 const menuItems = [
   {
-    img: img1,
+    img: butterChicken,
     heading: "Butter Chicken",
-    description: "The ultimate comfort food for your entire family!",
+    description: "Ultimate comfort food for your entire family!",
   },
   {
-    img: img1,
+    img: palakChicken,
     heading: "Palak Chicken",
-    description: "Delicious",
+    description:
+      "Creamy, flavorsome, amazingly delicious & makes for a comforting food!",
   },
   {
-    img: img1,
+    img: chikenTikka,
     heading: "Chicken Tikka Masala",
-    description: "Delicious",
+    description: "Spicy, creamy, flavorable, and crazy delicious! ",
   },
   {
-    img: img1,
+    img: chickenKorma,
     heading: "Chicken Korma",
-    description: "Delicious",
+    description: "Curried dish made from ground spices and coconut",
+  },
+  {
+    img: tandooriChicken,
+    heading: "Tandoori Chicken",
+    description: "Tender, juicy, moist and outrageously delicious ",
+  },
+  {
+    img: chickenCurry,
+    heading: "Chicken Curry",
+    description:
+      "traditional Indian dish made with plenty of spices, herbs, onions and tomatoes.",
   },
 ];
 

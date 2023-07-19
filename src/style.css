@@ -267,6 +267,7 @@ body {
   cursor: pointer;
   background-color: var(--background-light);
   transition: background-color 0.3s;
+  border-radius: 10px;
 }
 
 .card h2 {
@@ -286,7 +287,8 @@ body {
 
 .menu-card-img {
   height: 200px;
-  width: 300px;
+  width: 240px;
+  border-radius: 10px;
 }
 
 /* Contact */
