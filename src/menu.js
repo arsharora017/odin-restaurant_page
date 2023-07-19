@@ -37,7 +37,7 @@ const menuItems = [
     img: chickenCurry,
     heading: "Chicken Curry",
     description:
-      "traditional Indian dish made with plenty of spices, herbs, onions and tomatoes.",
+      "Traditional Indian dish made with plenty of spices, herbs, onions and tomatoes.",
   },
 ];
 
