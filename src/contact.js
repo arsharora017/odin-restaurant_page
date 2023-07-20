@@ -32,7 +32,7 @@ const createContactPage = () => {
   contactMainHeading.textContent = "Contact";
 
   // add text location
-  locationHeading.textContentt = "Location";
+  locationHeading.textContent = "Location";
   locationStreetName.textContent = "101 Rideau Street";
   locationCityName.textContent = "Ottawa, ON";
 
@@ -48,13 +48,18 @@ const createContactPage = () => {
   contactEmail.textContent = "info@indilicious.com";
 
   // add class
-  contactMainHeadingContainer.classList.add("contact-main-heading-contaiiner");
+  contactMainHeadingContainer.classList.add("contact-main-heading-container");
   contactHeading.classList.add("contact-heading");
   contactBodyContainer.classList.add("contact-body-container");
 
   location.classList.add("location-wrapper");
+  location.classList.add("info");
+
   hours.classList.add("hours-wrapper");
+  hours.classList.add("info");
+
   contact.classList.add("contact-wrapper");
+  contact.classList.add("info");
 
   //append
   contactMainHeadingContainer.appendChild(contactMainHeading);

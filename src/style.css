@@ -292,31 +292,45 @@ body {
 }
 
 /* Contact */
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-.contact-form {
+.contact-main-heading-container {
+  height: 150px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 6rem;
+}
+
+.contact-body-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+
+.info {
+  height: 200px;
+  width: 250px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  color: antiquewhite;
 }
 
-input {
-  margin: 10px 0;
-  padding: 5px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-  font-size: 16px;
+.info h2 {
+  font-size: 2rem;
+  padding: 25px 0;
 }
 
-input[type="submit"] {
-  background-color: 4caf50;
-  color: white;
-  font-size: 16px;
-  padding: 10px;
-  border: none;
-  border-radius: 3px;
-  cursor: pointer;
-}
-input[type="submit"]:hover {
-  background-color: #45a049;
+.info p {
+  font-size: 1.2rem;
+  padding: 5px 0;
+  font-weight: 400;
 }
