@@ -1,35 +1,84 @@
 //module for creating the contact page
-// import "./style.css";
 
 const createContactPage = () => {
   const content = document.querySelector("#content");
   const pageContent = document.createElement("div");
   pageContent.classList.add("page-content");
+  pageContent.classList.add("contact-container");
 
-  const form = document.createElement("form");
-  form.classList.add("contact-form");
+  //create elements
+  const contactMainHeadingContainer = document.createElement("div");
+  const contactMainHeading = document.createElement("h1");
 
-  const headingInput = document.createElement("input");
-  headingInput.type = "text";
-  headingInput.placeholder = "Enter heading";
-  form.appendChild(headingInput);
+  const contactBodyContainer = document.createElement("div");
+  const location = document.createElement("div");
+  const locationHeading = document.createElement("h2");
+  const locationStreetName = document.createElement("p");
+  const locationCityName = document.createElement("p");
 
-  const addressInput = document.createElement("input");
-  addressInput.type = "text";
-  addressInput.placeholder = "Enter address";
-  form.appendChild(addressInput);
+  const hours = document.createElement("div");
+  const hoursHeading = document.createElement("h2");
+  const hoursSet1 = document.createElement("p");
+  const hoursSet2 = document.createElement("p");
+  const hoursDaysClose = document.createElement("p");
 
-  const phoneInput = document.createElement("input");
-  phoneInput.type = "text";
-  phoneInput.placeholder = "Enter phone";
-  form.appendChild(phoneInput);
+  const contact = document.createElement("div");
+  const contactHeading = document.createElement("h2");
+  const contactPhone = document.createElement("p");
+  const contactEmail = document.createElement("p");
 
-  const submitButton = document.createElement("input");
-  submitButton.type = "button";
-  submitButton.value = "Submit";
-  form.appendChild(submitButton);
+  //******add text******
+  //contact main container
+  contactMainHeading.textContent = "Contact";
 
-  pageContent.appendChild(form);
+  // add text location
+  locationHeading.textContentt = "Location";
+  locationStreetName.textContent = "101 Rideau Street";
+  locationCityName.textContent = "Ottawa, ON";
+
+  //add text hours
+  hoursHeading.textContent = "Hours";
+  hoursSet1.textContent = "Tue - Thus, 8 am - 10pm";
+  hoursSet2.textContent = "Fri - Sun, 8 am - 11 pm";
+  hoursDaysClose.textContent = "Closed Mondays";
+
+  //add text contact info
+  contactHeading.textContent = "Contact";
+  contactPhone.textContent = "(613) 555-1110";
+  contactEmail.textContent = "info@indilicious.com";
+
+  // add class
+  contactMainHeadingContainer.classList.add("contact-main-heading-contaiiner");
+  contactHeading.classList.add("contact-heading");
+  contactBodyContainer.classList.add("contact-body-container");
+
+  location.classList.add("location-wrapper");
+  hours.classList.add("hours-wrapper");
+  contact.classList.add("contact-wrapper");
+
+  //append
+  contactMainHeadingContainer.appendChild(contactMainHeading);
+
+  location.appendChild(locationHeading);
+  location.appendChild(locationStreetName);
+  location.appendChild(locationCityName);
+
+  hours.appendChild(hoursHeading);
+  hours.appendChild(hoursSet1);
+  hours.appendChild(hoursSet2);
+  hours.appendChild(hoursDaysClose);
+
+  contact.appendChild(contactHeading);
+  contact.appendChild(contactPhone);
+  contact.appendChild(contactEmail);
+
+  contactBodyContainer.appendChild(location);
+  contactBodyContainer.appendChild(hours);
+  contactBodyContainer.appendChild(contact);
+
+  pageContent.appendChild(contactMainHeadingContainer);
+  pageContent.appendChild(contactBodyContainer);
+
   content.appendChild(pageContent);
 };
 
